@@ -1,7 +1,6 @@
-name: First Workflow
+name: Second Workflow
 
-on: 
-  push
+on: [push,pull_request]
 
 jobs:
   print-hello-world:
