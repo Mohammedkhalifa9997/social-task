@@ -1,0 +1,21 @@
+name: third Workflow
+
+on:
+  pull_request:
+    types:
+      -closed
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world
+        run: echo "Hello World 33"
+      - name: Print hello world 3
+        run: echo "Hello World 333"
+
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world 2
+        run: echo "Hello World 233ewwqewweqwqq33"
